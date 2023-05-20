@@ -27,7 +27,7 @@ const port = process.env.PORT || 3000;
 const start = async () => {
   try {
 
-    connectdb('mongodb+srv://Nodeexpressproject:NodeExpressproject123@ttt.2frh5xa.mongodb.net/jobsapibase?retryWrites=true&w=majority')
+    connectdb(Mongo_URI)
     app.listen(port, () =>
       console.log(`Server is listening on port ${port}...`)
     );
